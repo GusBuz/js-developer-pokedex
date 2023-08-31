@@ -1,7 +1,7 @@
 const pokemonList = document.getElementById('pokemonList')
 const loadMoreButton = document.getElementById('loadMoreButton')
 const generationSelector = document.getElementById("generationSelector");
-const maxRecords = 151
+let maxRecords = 151
 const limit = 10
 let offset = 0;
 
@@ -11,19 +11,19 @@ function convertPokemonToLi(pokemon) {
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
 
-            <div class="detail">
+            <div class="detail">                
+                <img src="${pokemon.photo}"
+                     alt="${pokemon.name}">
+                     
                 <ol class="types">
                     ${pokemon.types.map((type) => `<li class="type tag-${type}">${type}</li>`).join('')}
                 </ol>
-
-                <img src="${pokemon.photo}"
-                     alt="${pokemon.name}">
             </div>
         </li>
     `
 }
 
-function loadPokemonItens(offset, limit) {
+function loadPokemonItems(offset, limit) {
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml = pokemons.map(convertPokemonToLi).join('')
         pokemonList.innerHTML += newHtml
@@ -33,36 +33,72 @@ function loadPokemonItens(offset, limit) {
 function filterByGeneration(){
     switch (generationSelector.value) {
         case "generation1":
-            console.log("1");
-            return;
+            pokemonList.innerHTML = "";
+            offset = 0;
+            maxRecords = 151
+            loadPokemonItems(offset, limit)
+            loadMoreButton.style.display = "inline-block";
+            break;
         case "generation2":
-            console.log("2");
+            pokemonList.innerHTML = "";
+            offset = 151;
+            maxRecords = 251;
+            loadPokemonItems(offset, limit)
+            loadMoreButton.style.display = "inline-block";
             break;
         case "generation3":
-            console.log("3");
+            pokemonList.innerHTML = "";
+            offset = 251;
+            maxRecords = 386;
+            loadPokemonItems(offset, limit)
+            loadMoreButton.style.display = "inline-block";
             break;
         case "generation4":
-            console.log("4");
+            pokemonList.innerHTML = "";
+            offset = 386;
+            maxRecords = 493;
+            loadPokemonItems(offset, limit)
+            loadMoreButton.style.display = "inline-block";
             break;
         case "generation5":
-            console.log("5");
+            pokemonList.innerHTML = "";
+            offset = 493;
+            maxRecords = 649;
+            loadPokemonItems(offset, limit)
+            loadMoreButton.style.display = "inline-block";
             break;
         case "generation6":
-            console.log("6");
+            pokemonList.innerHTML = "";
+            offset = 649;
+            maxRecords = 721;
+            loadPokemonItems(offset, limit)
+            loadMoreButton.style.display = "inline-block";
             break;
         case "generation7":
-            console.log("7");
+            pokemonList.innerHTML = "";
+            offset = 721;
+            maxRecords = 809;
+            loadPokemonItems(offset, limit)
+            loadMoreButton.style.display = "inline-block";
             break;
         case "generation8":
-            console.log("8");
+            pokemonList.innerHTML = "";
+            offset = 809;
+            maxRecords = 905;
+            loadPokemonItems(offset, limit)
+            loadMoreButton.style.display = "inline-block";
             break;
         case "generation9":
-            console.log("9");
+            pokemonList.innerHTML = "";
+            offset = 905;
+            maxRecords = 1010;
+            loadPokemonItems(offset, limit)
+            loadMoreButton.style.display = "inline-block";
             break;
     }
 }
 
-loadPokemonItens(offset, limit)
+loadPokemonItems(offset, limit)
 
 loadMoreButton.addEventListener('click', () => {
     offset += limit
@@ -70,10 +106,11 @@ loadMoreButton.addEventListener('click', () => {
 
     if (qtdRecordsWithNexPage >= maxRecords) {
         const newLimit = maxRecords - offset
-        loadPokemonItens(offset, newLimit)
+        loadPokemonItems(offset, newLimit)
 
-        loadMoreButton.parentElement.removeChild(loadMoreButton)
+        // loadMoreButton.parentElement.removeChild(loadMoreButton)
+        loadMoreButton.style.display = "none";
     } else {
-        loadPokemonItens(offset, limit)
+        loadPokemonItems(offset, limit)
     }
 })
