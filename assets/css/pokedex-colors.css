@@ -1,0 +1,145 @@
+.tag-normal {
+    background-color: #AAA67F;
+}
+
+.tag-grass {
+    background-color: #74CB48;
+}
+
+.tag-fire {
+    background-color: #F57D31;
+}
+
+.tag-water {
+    background-color: #6493EB;
+}
+
+.tag-electric {
+    background-color: #F9CF30;
+}
+
+.tag-ice {
+    background-color: #9AD6DF;
+}
+
+.tag-ground {
+    background-color: #DEC16B;
+}
+
+.tag-flying {
+    background-color: #A891EC;
+}
+
+.tag-poison {
+    background-color: #A43E9E;
+}
+
+.tag-fighting {
+    background-color: #C12239;
+}
+
+.tag-psychic {
+    background-color: #FB5584;
+}
+
+.tag-dark {
+    background-color: #75574C;
+}
+
+.tag-rock {
+    background-color: #B69E31;
+}
+
+.tag-bug {
+    background-color: #A7B723;
+}
+
+.tag-ghost {
+    background-color: #70559B;
+}
+
+.tag-steel {
+    background-color: #B7B9D0;
+}
+
+.tag-dragon {
+    background-color: #7037FF;
+}
+
+.tag-fairy {
+    background-color: #E69EAC;
+}
+
+/* ---------------- background ---------------- */
+
+.bg-normal {
+    background: linear-gradient(to bottom, #AAA67F 0%, #AAA67F 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-grass {
+    background: linear-gradient(to bottom, #74CB48 0%, #74CB48 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-fire {
+    background: linear-gradient(to bottom, #F57D31 0%, #F57D31 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-water {
+    background: linear-gradient(to bottom, #6493EB 0%, #6493EB 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-electric {
+    background: linear-gradient(to bottom, #F9CF30 0%, #F9CF30 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-ice {
+    background: linear-gradient(to bottom, #9AD6DF 0%, #9AD6DF 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-ground {
+    background: linear-gradient(to bottom, #DEC16B 0%, #DEC16B 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-flying {
+    background: linear-gradient(to bottom, #A891EC 0%, #A891EC 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-poison {
+    background: linear-gradient(to bottom, #A43E9E 0%, #A43E9E 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-fighting {
+    background: linear-gradient(to bottom, #C12239 0%, #C12239 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-psychic {
+    background: linear-gradient(to bottom, #FB5584 0%, #FB5584 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-dark {
+    background: linear-gradient(to bottom, #75574C 0%, #75574C 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-rock {
+    background: linear-gradient(to bottom, #B69E31 0%, #B69E31 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-bug {
+    background: linear-gradient(to bottom, #A7B723 0%, #A7B723 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-ghost {
+    background: linear-gradient(to bottom, #70559B 0%, #70559B 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-steel {
+    background: linear-gradient(to bottom, #B7B9D0 0%, #B7B9D0 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-dragon {
+    background: linear-gradient(to bottom, #7037FF 0%, #7037FF 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
+
+.bg-fairy {
+    background: linear-gradient(to bottom, #E69EAC 0%, #E69EAC 35%, #EFEFEF 35%, #EFEFEF 100%);
+}
