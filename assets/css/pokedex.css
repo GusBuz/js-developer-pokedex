@@ -21,6 +21,32 @@ header h1 {
     margin: 0 0.5rem;
 }
 
+.selectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selectContainer label {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: #DC0A2D;
+    font-weight: 700;
+}
+
+select {
+    width: auto;
+    height: 100%;
+    padding: 0.3rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #DC0A2D;
+    border: none;
+    text-align: center;
+}
+
 .pokemons {
     display: grid;
     grid-template-columns: 1fr;

@@ -28,8 +28,24 @@
         <img class="pokeballBg" src="/assets/images/pokeball.svg" alt="pokeball">
         <img class="pokeballIcon" src="/assets/images/pokeball.svg" alt="pokeball">
         <h1>Pokedex</h1>
+
     </header>
     <section class="content">
+
+        <div class="selectContainer">
+            <label for="generationSelector">Selecione a geração:</label>
+            <select name="generationSelector" id="generationSelector" onchange="filterByGeneration()">
+                <option value="generation1" selected>Geração I - 1 ~ 151</option>
+                <option value="generation2">Geração II - 152 ~ 251</option>
+                <option value="generation3">Geração III - 252 ~ 386</option>
+                <option value="generation4">Geração IV - 387 ~ 493</option>
+                <option value="generation5">Geração V - 494 ~ 649</option>
+                <option value="generation6">Geração VI - 650 ~ 721</option>
+                <option value="generation7">Geração VII - 722 ~ 809</option>
+                <option value="generation8">Geração VIII - 810 ~ 905</option>
+                <option value="generation9">Geração IX - 906 ~ 1010</option>
+            </select>
+        </div>
 
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
