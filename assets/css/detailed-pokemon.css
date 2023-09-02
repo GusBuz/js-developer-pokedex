@@ -1,0 +1,133 @@
+.detailed-background {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.detailed-title {
+    display: flex;
+    align-items: center;
+}
+
+.detailed-name {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.detailed-number {
+    color: #ffffff;
+}
+
+.detailed-photo {
+    width: 50%;
+    position: absolute;
+    top: 9rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.detailed-infos {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+    padding: 1rem 0.5rem;
+    margin: 6rem 0 0 0;
+    border-radius: 1rem;
+    background-color: #fff;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+}
+
+.detailed-types {
+    padding: 0;
+    margin: 5rem 0 0;
+    list-style: none;
+}
+
+.type {
+    color: #fff;
+    padding: .25rem .5rem;
+    margin: 0 .25rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    /*filter: brightness(1.1);*/
+    display: inline-block;
+    text-align: center;
+}
+
+.detailed-about {
+    /*display: flex;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: flex-end;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+    width: 100%;
+}
+.measures-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.measures-box {
+    display: flex;
+    align-items: center;
+}
+
+.measures-box span {
+    margin: 0 0.3rem;
+}
+
+.vertical-line {
+    border-left: 1px solid #000;
+    height: 5.5rem;
+}
+
+.measures-list img {
+    width: 1.8rem;
+}
+
+.moves-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title {
+    font-size: .8rem;
+    margin: 1rem;
+}
+
+.status-list {
+    padding: 0;
+    display: grid;
+    margin: 0;
+    line-height: 0;
+}
+
+.status-line {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    align-items: center;
+    justify-items: start;
+}
+
+.status-line span, .progress-bar {
+    justify-self: center;
+}
+
+.progress-bar {
+    position: relative;
+    width: 12rem;
+    height: .5rem;
+    background-color: #6c79db;
+}
+
+.progress-hp {
+    width: 45%;
+    height: 100%;
+    background-color: #4CAF50;
+}

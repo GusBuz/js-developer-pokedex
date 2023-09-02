@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="/assets/images/favicon.ico">
     <title>Pokedex</title>
 
     <!-- Normalize CSS -->
@@ -21,6 +23,8 @@
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
     <link rel="stylesheet" href="/assets/css/pokedex-colors.css">
+    <link rel="stylesheet" href="/assets/css/detailed-pokemon.css">
+
 </head>
 
 <body>
@@ -30,7 +34,7 @@
         <h1>Pokedex</h1>
 
     </header>
-    <section class="content">
+    <section class="pokemonList">
 
         <div class="selectContainer">
             <label for="generationSelector">Selecione a geração:</label>
@@ -56,6 +60,100 @@
                 Carregar mais
             </button>
         </div>
+    </section>
+
+    <section class="detailed-pokemon tag-grass">
+        <div class="detailed-background">
+            <div class="detailed-title">
+                <img class="back-arrow" src="/assets/images/arrow_back.svg">
+                <span class="detailed-name">Bulbasaur</span>
+            </div>
+            <span class="detailed-number">#001</span>
+        </div>
+        <img class="detailed-photo" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png">
+        <div class="detailed-infos">
+            <ol class="detailed-types">
+                <li class="type tag-fighting">fighting</li>
+                <li class="type tag-psychic">psychic</li>
+            </ol>
+            <h2>Sobre</h2>
+            <ol class="detailed-about">
+                <li class="measures-list">
+                    <div class="measures-box">
+                        <img src="/assets/images/weight.svg">
+                        <span>6,9kg</span>
+                    </div>
+                    <span class="about-title">Peso</span>
+                </li>
+
+                <li class="vertical-line"></li>
+
+                <li class="moves-list">
+                    <span>chlorophyll</span>
+                    <span>overgrow</span>
+                    <span class="about-title">Habilidades</span>
+                </li>
+
+                <li class="vertical-line"></li>
+
+                <li class="measures-list">
+                    <div class="measures-box">
+                        <img src="/assets/images/straighten.svg">
+                        <span>0,7m</span>
+                    </div>
+                    <span class="about-title">Altura</span>
+                </li>
+            </ol>
+
+            <h2>Status Base</h2>
+
+            <ol class="status-list">
+                <li class="status-line">
+                    <h3>HP</h3>
+                    <span>045</span>
+                    <div class="progress-bar">
+                        <div class="progress-hp"></div>
+                    </div>
+                </li>
+                <li class="status-line">
+                    <h3>ATK</h3>
+
+                    <span>049</span>
+                    <div class="progress-bar">
+                        <div class="progress-atk"></div>
+                    </div>
+                </li>
+                <li class="status-line">
+                    <h3>DEF</h3>
+                    <span>049</span>
+                    <div class="progress-bar">
+                        <div class="progress-def"></div>
+                    </div>
+                </li>
+                <li class="status-line">
+                    <h3>SATK</h3>
+                    <span>065</span>
+                    <div class="progress-bar">
+                        <div class="progress-satk"></div>
+                    </div>
+                </li>
+                <li class="status-line">
+                    <h3>SDEF</h3>
+                    <span>065</span>
+                    <div class="progress-bar">
+                        <div class="progress-sdef"></div>
+                    </div>
+                </li>
+                <li class="status-line">
+                    <h3>SPD</h3>
+                    <span>045</span>
+                    <div class="progress-bar">
+                        <div class="progress-spd"></div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+
     </section>
 
     <!-- Nosso JS -->
