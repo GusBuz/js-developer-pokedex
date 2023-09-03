@@ -1,12 +1,30 @@
+.detailed-pokemon {
+    max-width: 992px;
+}
+
 .detailed-background {
     display: flex;
     position: relative;
     justify-content: space-between;
 }
 
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 1.5rem 0 0;
+    transition: all 1s;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
 .detailed-title {
     display: flex;
     align-items: center;
+    margin: .5rem;
 }
 
 .detailed-name {
@@ -20,6 +38,7 @@
 
 .detailed-photo {
     width: 50%;
+    max-width: 190px;
     position: absolute;
     top: 9rem;
     left: 50%;
@@ -59,13 +78,14 @@
 .detailed-about {
     /*display: flex;*/
     display: grid;
+    min-width: 300px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: flex-end;
     list-style: none;
     padding: 0;
     justify-content: space-around;
-    width: 100%;
+    width: 80%;
 }
 .measures-list {
     display: flex;
@@ -81,19 +101,8 @@
     margin: 0 0.3rem;
 }
 
-.vertical-line {
-    border-left: 1px solid #000;
-    height: 5.5rem;
-}
-
 .measures-list img {
     width: 1.8rem;
-}
-
-.moves-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .about-title {
@@ -101,7 +110,21 @@
     margin: 1rem;
 }
 
+.vertical-line {
+    border-left: 1px solid #000;
+    height: 5.5rem;
+}
+
+.moves-list {
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .status-list {
+    width: 90%;
+    max-width: 700px;
     padding: 0;
     display: grid;
     margin: 0;
@@ -120,14 +143,49 @@
 }
 
 .progress-bar {
+    max-width: 550px;
     position: relative;
-    width: 12rem;
+    width: 45vw;
     height: .5rem;
-    background-color: #6c79db;
+    background-color: #9da6e7;
 }
 
 .progress-hp {
     width: 45%;
     height: 100%;
-    background-color: #4CAF50;
+    background-color: #495ad5;
 }
+
+@media screen and (min-width: 380px) {
+    .status-list {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .detailed-photo {
+        top: 11rem;
+        max-width: 260px;
+    }
+
+    .detailed-name {
+        font-size: 2.5rem;
+    }
+
+    .detailed-infos {
+        margin: 10rem 0 0 0;
+    }
+
+    .detailed-about {
+        width: 80%;
+    }
+
+    .progress-bar {
+        width: 50vw;
+    }
+
+    .status-list {
+        width: 70%;
+    }
+}
+
