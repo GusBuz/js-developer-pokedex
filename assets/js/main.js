@@ -134,7 +134,7 @@ function convertDetailedPokemon(pokemon) {
                 <div class="detailed-background">
                     <div class="detailed-title">
                         <button id="back-button" onclick="returnToList()">
-                            <img src="/assets/images/arrow_back.svg" alt="Flecha para voltar">
+                            <img src="assets/images/arrow_back.svg" alt="Flecha para voltar">
                         </button>        
                         <span class="detailed-name">${pokemon.name}</span>
                     </div>
@@ -149,7 +149,7 @@ function convertDetailedPokemon(pokemon) {
                     <ol class="detailed-about">
                         <li class="measures-list">
                             <div class="measures-box">
-                                <img src="/assets/images/weight.svg" alt="Ícone de peso">
+                                <img src="assets/images/weight.svg" alt="Ícone de peso">
                                 <span>${pokemon.weight} kg</span>
                             </div>
                             <span class="about-title">Peso</span>
@@ -166,7 +166,7 @@ function convertDetailedPokemon(pokemon) {
         
                         <li class="measures-list">
                             <div class="measures-box">
-                                <img src="/assets/images/straighten.svg" alt="Ícone de régua">
+                                <img src="assets/images/straighten.svg" alt="Ícone de régua">
                                 <span>${pokemon.height} m</span>
                             </div>
                             <span class="about-title">Altura</span>
