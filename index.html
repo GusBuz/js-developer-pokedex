@@ -29,12 +29,17 @@
 
 <body>
     <header>
+        <div class="links">
+            <p>Desenvolvido por Gus Buzana 2023</p>
+            <a href="https://www.linkedin.com/in/gusbuzana/" target="_blank"><img src="/assets/images/linkedin-icon.svg" alt="Logotipo do Linkedin" class="footerLogo"></a>
+            <a href="https://github.com/GusBuz" target="_blank"><img src="/assets/images/github-icon.svg" alt="Logotipo do Github" class="footerLogo"></a>
+        </div>
         <img class="pokeballBg" src="/assets/images/pokeball.svg" alt="Pokebola de fundo">
         <img class="pokeballIcon" src="/assets/images/pokeball.svg" alt="Ícone de pokebola">
         <h1>Pokedex</h1>
 
     </header>
-    <section class="pokemonList">
+    <section id="pokemonListSection" class="pokemonList">
 
         <div class="selectContainer">
             <label for="generationSelector">Selecione a geração:</label>
@@ -62,101 +67,8 @@
         </div>
     </section>
 
-    <section id="detailed-pokemon" class="detailed-pokemon tag-dark">
-        <div class="detailed-background">
-            <div class="detailed-title">
-                <button>
-                    <img class="back-arrow" src="/assets/images/arrow_back.svg" alt="Flecha para voltar">
-                </button>
-
-                <span class="detailed-name">Bulbasaur</span>
-            </div>
-            <span class="detailed-number">#001</span>
-        </div>
-        <img class="detailed-photo" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Ilustração do pokemon">
-        <div class="detailed-infos">
-            <ol class="detailed-types">
-                <li class="type tag-fighting">fighting</li>
-                <li class="type tag-psychic">psychic</li>
-            </ol>
-            <h2>Sobre</h2>
-            <ol class="detailed-about">
-                <li class="measures-list">
-                    <div class="measures-box">
-                        <img src="/assets/images/weight.svg" alt="Ícone de peso">
-                        <span>6,9kg</span>
-                    </div>
-                    <span class="about-title">Peso</span>
-                </li>
-
-                <li class="vertical-line"></li>
-
-                <li class="moves-list">
-                    <span>chlorophyll</span>
-                    <span>overgrow</span>
-                    <span class="about-title">Habilidades</span>
-                </li>
-
-                <li class="vertical-line"></li>
-
-                <li class="measures-list">
-                    <div class="measures-box">
-                        <img src="/assets/images/straighten.svg" alt="Ícone de régua">
-                        <span>0,7m</span>
-                    </div>
-                    <span class="about-title">Altura</span>
-                </li>
-            </ol>
-
-            <h2>Status Base</h2>
-
-            <ol class="status-list">
-                <li class="status-line">
-                    <h3>HP</h3>
-                    <span>045</span>
-                    <div class="progress-bar">
-                        <div class="progress-hp"></div>
-                    </div>
-                </li>
-                <li class="status-line">
-                    <h3>ATK</h3>
-
-                    <span>049</span>
-                    <div class="progress-bar">
-                        <div class="progress-atk"></div>
-                    </div>
-                </li>
-                <li class="status-line">
-                    <h3>DEF</h3>
-                    <span>049</span>
-                    <div class="progress-bar">
-                        <div class="progress-def"></div>
-                    </div>
-                </li>
-                <li class="status-line">
-                    <h3>SATK</h3>
-                    <span>065</span>
-                    <div class="progress-bar">
-                        <div class="progress-satk"></div>
-                    </div>
-                </li>
-                <li class="status-line">
-                    <h3>SDEF</h3>
-                    <span>065</span>
-                    <div class="progress-bar">
-                        <div class="progress-sdef"></div>
-                    </div>
-                </li>
-                <li class="status-line">
-                    <h3>SPD</h3>
-                    <span>045</span>
-                    <div class="progress-bar">
-                        <div class="progress-spd"></div>
-                    </div>
-                </li>
-            </ol>
-        </div>
-
+    <section id="detailed-pokemon" >
+        <!-- ..... Detailed pokemon here ..... -->
     </section>
 
     <!-- Nosso JS -->
